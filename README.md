@@ -1,2 +1,4 @@
 # gee-pipeline
 This repo contains the code used for downloading satellite images using Google Earth Engine. 
+
+To run the tool, the user needs to have a personal or service account (we use a service account) to authenticate to Google Earth Engine, as well as a private JSON for that account. Instructions on how to create a service account can be found here: [Create Service Account](https://developers.google.com/earth-engine/guides/service_account#create-a-service-account). This link provides instructions to create the private JSON key: [Create JSON Key for Service Account](https://developers.google.com/earth-engine/guides/service_account#create-a-private-key-for-the-service-account).
