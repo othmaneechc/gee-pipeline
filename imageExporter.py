@@ -6,14 +6,11 @@ import os
 import time
 from argparse import ArgumentParser
 from functools import partial
-from logging.config import valid_ident
-from pydoc import resolve
 
 import ee
 import numpy as np
 import pandas as pd
 import requests
-from geetools import batch
 from retry import retry
 from tqdm import tqdm
 
