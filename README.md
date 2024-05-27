@@ -1,11 +1,13 @@
-# SDG 6
-In this repository, the tool we wrote to download satellite images can be found under `imageExporter.py`. The tool requires a .csv file containing desired coordinates, the dataset to download images from (Sentinel, NAIP, Landsat), the desired dimensions of the output images, the output directory path, and whether
-images should be pansharpened (only available for Landsat). 
+# SDG 6: Satellite Image Downloader
 
-Details on how to use `imageExporter.py' can be found below:
+This repository contains a tool to download satellite images, located in `imageExporter.py`. The tool requires a `.csv` file with coordinates, the dataset to download images from (Sentinel, NAIP, Landsat), the desired dimensions of the output images, the output directory path, and an option to pansharpen images (only available for Landsat).
 
-```
-usage: imageExported.py [-h] [-f FILEPATH] [-d DATASET] [-s START_DATE] [-e END_DATE] [-he HEIGHT] [-w WIDTH] [-o OUTPUT_DIR] [-sh SHARPENED]
+## Usage Instructions
+
+### Basic Command
+To run the code with default arguments:
+```bash
+python imageExporter.py -f FILEPATH [-h] [-f FILEPATH] [-d DATASET] [-s START_DATE] [-e END_DATE] [-he HEIGHT] [-w WIDTH] [-o OUTPUT_DIR] [-sh SHARPENED]
 
 options:
   -h, --help            show this help message and exit
@@ -30,7 +32,7 @@ options:
 
 Since all arguments are set by default, the most basic way of running the code would be: 
 
-```
+```bash
 python imageExporter.py -f FILEPATH
 ```
 
