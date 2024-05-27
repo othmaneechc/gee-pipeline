@@ -5,6 +5,7 @@ This repository contains a tool to download satellite images, located in `imageE
 ## Usage Instructions
 
 ### Basic Command
+
 To run the code with default arguments:
 ```bash
 python imageExporter.py -f FILEPATH [-h] [-f FILEPATH] [-d DATASET] [-s START_DATE] [-e END_DATE] [-he HEIGHT] [-w WIDTH] [-o OUTPUT_DIR] [-sh SHARPENED]
@@ -38,9 +39,14 @@ python imageExporter.py -f FILEPATH
 
 with FILEPATH replaced by the path to the desired coordinates csv file.
 
+### Pre-requisites
+
 To run the tool, the user needs to have a personal or service account (we use a service account) to authenticate to Google Earth Engine, as well as a private JSON for that account. Instructions on how to create a service account can be found here: [Create Service Account](https://developers.google.com/earth-engine/guides/service_account#create-a-service-account). This link provides instructions to create the private JSON key: [Create JSON Key for Service Account](https://developers.google.com/earth-engine/guides/service_account#create-a-private-key-for-the-service-account).
 
 Another requirement of the program is to install the Google Earth Engine. Instructions on how to do so can be found here: [Earth Engine Installation](https://developers.google.com/earth-engine/guides/python_install#install-options).
 
 To install the rest of the required packages, the user can create a conda environment similar to the one we use. Our environment file can be found in `ee_env.yml`. Installing a conda environment using a yml file is done through: conda env create -f YML_FILE_NAME 
 
+## Credits
+
+This repository was developed as part of the Data+ 2022 project. Special thanks to Saad Lahrichi, who wrote most of the code in this repository. For more details, visit the [Data+ 2022 GitHub repository](https://github.com/zcalhoun/data-plus-22).
