@@ -47,6 +47,11 @@ Another requirement of the program is to install the Google Earth Engine. Instru
 
 To install the rest of the required packages, the user can create a conda environment similar to the one we use. Our environment file can be found in `ee_env.yml`. Installing a conda environment using a yml file is done through: conda env create -f YML_FILE_NAME 
 
+You might need to run the following command:
+```bash
+conda install -c conda-forge google-cloud-sdk
+```
+
 ## Credits
 
 This repository was developed as part of the Data+ 2022 project. Special thanks to Saad Lahrichi, who wrote most of the code in this repository. For more details, visit the [Data+ 2022 GitHub repository](https://github.com/zcalhoun/data-plus-22).
