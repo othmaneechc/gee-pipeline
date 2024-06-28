@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Define default values
-file="us-state-capitals.csv"
+file="locations.csv"
 height=2048
 width=2048
-dataset="landsat"
-start_date="2023-03-21"
-end_date="2023-07-21"
+dataset="sentinel"
+start_date="2023-07-21"
+end_date="2023-12-21"
 
 # Parse command line arguments
 while getopts f:h:w:d:s:e: flag
